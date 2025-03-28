@@ -15,6 +15,7 @@ const login = async(req,res ) =>{
 
     const register = async(req,res) =>{
         try{
+            console.log(req.body)
             const usuario = req.body;
             await modelos.registrarUsuario(usuario)
             res.send("Usuario registrado")
