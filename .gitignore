@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Archivos de entorno
+.env
+
+# Caché y logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Directorios de build y dependencias instaladas
+dist/
+coverage/
+
+# Configuración de editores de código
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Dependencias de paquetes (en caso de usar npm o yarn)
+package-lock.json
+yarn.lock
