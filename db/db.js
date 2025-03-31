@@ -5,6 +5,6 @@ export const pool = new Pool({
     host: 'localhost',
     user: 'postgres',
     password: 'admin',
-    database: 'joyas',
+    database: 'softjobs',
     allowExitOnIdle: true
 })
