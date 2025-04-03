@@ -2,10 +2,12 @@ import express from 'express'
 const app = express()
 import cors from 'cors'
 import route from './routes/routes.js'
+import { reportes } from './middleware/reports.js'
 
 app.use(cors());
 app.use(express.json())
-app.use("/softjobs",route)
+app.use(reportes.logger)
+app.use("/",route)
 
 
 const PORT = process.env.PORT || 3000;
